@@ -85,8 +85,8 @@ func main() {
 	router := mux.NewRouter()
 
 	// Sample data for demonstration purposes
-	songs = append(songs, Song{ID: "1", Artist: "Artist1", SongName: "Song1", SpotifyLink: "link1", Genre: "Genre1", Description: "Description1"})
-	songs = append(songs, Song{ID: "2", Artist: "Artist2", SongName: "Song2", SpotifyLink: "link2", Genre: "Genre2", Description: "Description2"})
+	songs = append(songs, Song{ID: "1", Artist: "Sonic Eigma", SongName: "Our Kingdom", SpotifyLink: "https://open.spotify.com/track/7bV0OSwRSf3BfAKB9pIT7t?si=15e2b8ac41b74bd8", Genre: "Melodic House/Techno", Description: "Our Kingdom is a melodic house song. Its about staying true to your kingdom and fighting to protect it"})
+	songs = append(songs, Song{ID: "2", Artist: "Sonic Eigma", SongName: "Only now", SpotifyLink: "https://open.spotify.com/track/674DR9xXGpqsER2PcOIsoU?si=c5111ce5f7934def", Genre: "Melodic House/Techno", Description: "Only Now is a dance electronic jam."})
 
 	// Define API endpoints
 	router.HandleFunc("/songs", GetSongs).Methods("GET")
